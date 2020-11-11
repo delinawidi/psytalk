@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Lihat User</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-sidebar border-right" id="sidebar-wrapper">
+      <div class="list-group-item list-group-item-action bg-light sidebar-heading"><img
+          src="assets/images/Icon-psytalk.png" width="155" alt=""> </div>
+      <div class="list-group list-group-flush">
+        <p class="menu-sidebar">Menu</p>
+        <a href="#" class="list-group-item list-group-item-action bg-link active">
+          <img class="icon" src="assets/images/Icon-user.png" width="24" alt="Icon Manage User">
+          Manage User
+        </a>
+        <a href="lihat_artikel.html" class="list-group-item list-group-item-action bg-link">
+          <img class="icon" src="assets/images/Icon-articles.png" width="24" alt="Icon Articles">
+          Articles
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-link">
+          <img class="icon" src="assets/images/Icon-logout.png" width="24" alt="Icon Log Out">
+          Log out
+        </a>
+
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Header Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <img class="btn btn-slider" id="menu-toggle" src="assets/images/Arrow - Left 2.png" width="40" alt="">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <div class="foto-admin"></div> <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active nama-admin">
+              <a class="nav-link" href="#">Waslur Wustho <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Isi Content -->
+
+      <div id="accordion">
+        <div class="card data-user">
+          <div class="card-header header-card" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <img class="icon" src="assets/images/Icon_ham.png" width="24" alt="Icon Manage User">
+                User
+              </button>
+
+              <a class="btn btn-primary btn-add" href="tambah_user.html" role="button">
+                <img class="icon" src="assets/images/Icon_plus.png" width="16" alt="Icon Manage User"> 
+                New User
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <div class="tb-data">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th width="10%" scope="col-">ID</th>
+                      <th width="15%" scope="col-">Name</th>
+                      <th width="15%" scope="col-">Email</th>
+                      <th width="15%" scope="col-">Role</th>
+                      <th width="10%" scope="col-">Password</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>@gmail</td>
+                      <td>User</td>
+                      <td>coba123</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>@gmail</td>
+                      <td>User</td>
+                      <td>Thornton</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>@gmail</td>
+                      <td>User</td>
+                      <td>theBird</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Larry</td>
+                      <td>@gmail</td>
+                      <td>User</td>
+                      <td>theBird11</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Larry</td>
+                      <td>@gmail</td>
+                      <td>Conten Writer</td>
+                      <td>semongko2045</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>Larry</td>
+                      <td>@twitter</td>
+                      <td>User</td>
+                      <td>harisenin885</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <p>
+                    Displaying items from 1 to 6 of total 6 items.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- div akhir  -->
+    </div>
+
+
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="jquery/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

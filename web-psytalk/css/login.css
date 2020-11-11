@@ -1,0 +1,191 @@
+/* Install Fonts */
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Semibold;
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Open_Sanslight;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: Open_Sans;
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open_Sans-Semibold;
+    src: url(../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+
+/* css global */
+
+.logo-header {
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form-email {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.login {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.btn-login-psytalk{
+    background: #6CB28E;
+    border: 0;
+    width: 306px;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'Open_Sans';
+}
+
+.btn-login-psytalk:hover {
+    background: #579d78;
+    border: 0;
+}
+
+/* ---------- */
+
+
+/* CSS Login.html */
+.front-login {
+    background: #597A90;
+}
+
+.form-login {
+    background: #FEFEFE;
+    height: 600px;
+    width: 496px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: block;
+    border-radius: 15px;
+}
+
+.form-login .title-form {
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 19px;
+    margin-left: 177px;
+    margin-right: 177px;
+    color:  #254458;
+    position: absolute;
+}
+
+.form-login .subtitle-form {
+    font-size: 16px;
+    font-family: 'Open_Sans';
+    font-weight: 400;
+    margin-top: 88px;
+    margin-left: 82px;
+    margin-right: 80px;
+    color:  #9B9B9B;
+}
+
+.forgot-password{
+    margin: 90px;
+}
+
+
+/* CSS forgot_password_1.html dan forgot_password_2.html */
+
+.form-forgotpassword {
+    background: #FEFEFE;
+    height: 500px;
+    width: 496px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: block;
+    border-radius: 15px;
+}
+
+.form-forgotpassword .title-form {
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 19px;
+    margin-left: 90px;
+    margin-right: 90px;
+    color:  #254458;
+    position: absolute;
+}
+
+.form-forgotpassword .subtitle-form {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open_Sans';
+    font-weight: 400;
+    margin-top: 88px;
+    margin-left: 82px;
+    margin-right: 80px;
+    color:  #9B9B9B;
+}
+
+.btn-forgot-password{
+    background: #6CB28E;
+    border: 0;
+    width: 306px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'Open_Sans';
+}
+
+.btn-forgot-password:hover {
+    background: #579d78;
+    border: 0;
+}
+
+
+/* CSS forgot_password_3.html */
+
+.form-login .title-form-fp {
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-top: 19px;
+    margin-left: 90px;
+    margin-right: 90px;
+    color:  #254458;
+    position: absolute;
+}
+
+.form-login .subtitle-form-fp {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open_Sans';
+    font-weight: 400;
+    margin-top: 88px;
+    margin-left: 82px;
+    margin-right: 80px;
+    color:  #9B9B9B;
+}
+
+/* CSS lihat_user.html */

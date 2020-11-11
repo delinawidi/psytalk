@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tambah Artikel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-sidebar border-right" id="sidebar-wrapper">
+            <div class="list-group-item list-group-item-action bg-light sidebar-heading"><img
+                    src="assets/images/Icon-psytalk.png" width="155" alt=""> </div>
+            <div class="list-group list-group-flush">
+                <p class="menu-sidebar">Menu</p>
+                <a href="lihat_user.html" class="list-group-item list-group-item-action bg-link">
+                    <img class="icon" src="assets/images/Icon-user.png" width="24" alt="Icon Manage User">
+                    Manage User
+                </a>
+                <a href="lihat_artikel.html" class="list-group-item list-group-item-action bg-link active">
+                    <img class="icon" src="assets/images/Icon-articles.png" width="24" alt="Icon Articles">
+                    Articles
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-link">
+                    <img class="icon" src="assets/images/Icon-logout.png" width="24" alt="Icon Log Out">
+                    Log out
+                </a>
+
+
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Header Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <img class="btn btn-slider" id="menu-toggle" src="assets/images/Arrow - Left 2.png" width="40" alt="">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <div class="foto-admin"></div> <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active nama-admin">
+                            <a class="nav-link" href="#">Waslur Wustho <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <!-- Isi Content -->
+
+            <div id="accordion">
+                <div class="card data-user">
+                    <div class="card-header header-card" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <img class="icon" src="assets/images/Icon_plusBlue.png" width="20"
+                                    alt="Icon Manage User">
+                                New Article
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row form-space">
+                                    <label for="inputJudul" class="col-sm-2 col-form-label">Judul</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputJudul"
+                                            placeholder="Input Judul">
+                                    </div>
+                                </div>
+                                <div class="form-group row form-space">
+                                    <label for="inputKategori" class="col-sm-2 col-form-label">Kategori</label>
+                                    <div class="col-sm-6">
+                                        <select class="custom-select custom-select-m mb-2">
+                                            <option selected>Select Option</option>
+                                            <option value="1">Stress</option>
+                                            <option value="1">Self Awareness</option>
+                                            <option value="2">Social</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row form-space">
+                                    <label for="inputPenulis" class="col-sm-2 col-form-label">Penulis</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="inputPenulis" placeholder="Penulis">
+                                    </div>
+                                </div>
+                                <div class="form-group row form-space">
+                                    <label for="inputFile" class="col-sm-2 col-form-label">Cover</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label"></label>
+                                    <div class="col-sm-10">
+                                        <button class="btn btn-primary btn-save" type="submit">
+                                            <img class="icon-save" src="assets/images/Icon-downlaod.png" width="16"
+                                                alt="Icon Manage User">
+                                            Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div akhir  -->
+            </div>
+
+
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="jquery/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+
+        <!-- file input -->
+        <script>
+            // Add the following code if you want the name of the file appear on select
+            $(".custom-file-input").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+        </script>
+</body>
+
+</html>
